@@ -4,7 +4,7 @@
     http://pear.php.net/dtd/package-2.0
     http://pear.php.net/dtd/package-2.0.xsd">
   <name>sfVizzupPlugin</name>
-  <channel>plugins.symfony-project.com</channel>
+  <channel>pear.symfony-project.com</channel>
   <summary>The sfVizzupPlugin offers an object interface for vizzup.com API.</summary>
   <description>The sfVizzupPlugin offers an object interface for vizzup.com API.For more information visit http://www.vizzup.com or contact us contact@vizzup.com</description>
   <lead>
@@ -16,8 +16,8 @@
   <date>2009-03-27</date>
   <time>14:41:00</time>
   <version>
-    <release>0.1</release>
-    <api>0.1</api>
+    <release>1.0.0</release>
+    <api>1.0.0</api>
   </version>
   <stability>
     <release>stable</release>
@@ -26,7 +26,19 @@
   <license uri="http://www.symfony-project.org/license">MIT license</license>
   <notes>-</notes>
   <contents>
-    ##CONTENTS##
+   <dir name="/">
+    <file role="data" name="README" />
+    <file role="data" name="LICENSE" />
+    <dir name="config">
+    <!-- model -->
+    	<file role="data" name="app.yml" />
+   	</dir>
+    <dir name="lib">
+    	<!-- classes -->
+     	<file role="data" name="sfVizzup.class.php" />
+    	<file role="data" name="vizzupClient.class.php" />
+    </dir>
+   </dir>
   </contents>
   <dependencies>
    <required>
@@ -48,8 +60,8 @@
   <changelog>
    <release>
     <version>
-      <release>0.1</release>
-      <api>0.1</api>
+      <release>1.0.0</release>
+      <api>1.0.0</api>
     </version>
     <stability>
      <release>stable</release>

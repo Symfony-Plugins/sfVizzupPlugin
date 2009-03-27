@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.6.1" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0
+    http://pear.php.net/dtd/tasks-1.0.xsd
+    http://pear.php.net/dtd/package-2.0
+    http://pear.php.net/dtd/package-2.0.xsd">
+  <name>sfVizzupPlugin</name>
+  <channel>plugins.symfony-project.com</channel>
+  <summary>The sfVizzupPlugin offers an object interface for vizzup.com API.</summary>
+  <description>The sfVizzupPlugin offers an object interface for vizzup.com API.For more information visit http://www.vizzup.com or contact us contact@vizzup.com</description>
+  <lead>
+    <name>Lionel Guichard</name>
+    <user>tali</user>
+    <email>lionel.guichard@gmail.com</email>
+    <active>yes</active>
+  </lead>
+  <date>2009-03-27</date>
+  <time>14:41:00</time>
+  <version>
+    <release>0.1</release>
+    <api>0.1</api>
+  </version>
+  <stability>
+    <release>stable</release>
+    <api>stable</api>
+  </stability>
+  <license uri="http://www.symfony-project.org/license">MIT license</license>
+  <notes>-</notes>
+  <contents>
+    ##CONTENTS##
+  </contents>
+  <dependencies>
+   <required>
+    <php>
+     <min>5.2.0</min>
+    </php>
+    <pearinstaller>
+     <min>1.4.1</min>
+    </pearinstaller>
+    <package>
+     <name>symfony</name>
+     <channel>pear.symfony-project.com</channel>
+     <min>1.0.0</min>
+     <max>1.2.0</max>
+    </package>
+   </required>
+  </dependencies>
+  <phprelease /> 
+  <changelog>
+   <release>
+    <version>
+      <release>0.1</release>
+      <api>0.1</api>
+    </version>
+    <stability>
+     <release>stable</release>
+     <api>stable</api>
+    </stability>
+    <license uri="http://www.symfony-project.org/license">MIT License</license>
+    <date>2009-03-27</date>
+    <license>LGPL</license>
+    <notes>First release</notes>
+   </release>
+  </changelog>
+</package>

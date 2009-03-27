@@ -1,0 +1,75 @@
+# sfVizzupPlugin
+
+## Overview
+
+The sfVizzupPlugin offers an object interface for vizzup.com API. 
+
+For more information visit http://www.vizzup.com or contact us at contact@vizzup.com
+
+## Installation
+
+To install the latest release, execute :
+		
+    > symfony plugin:install sfVizzupPlugin
+
+or to install the current revision :
+		
+    > svn co http://svn.symfony-project.com/plugins/sfVizzupPlugin/trunk sfVizzupPlugin
+
+## Configuration
+
+Configure general plugin settings in your application's app.yml file.
+
+    [yml]
+    # app.yml
+    all:
+    	sf_vizzup_plugin:
+    		api_key: f87a4cf22690a84e0d32cf1981a5g4yt
+
+## Usage
+
+Get instance of sfVizzup
+
+    [php]
+    // Get instance
+    $vizzup = sfVizzup::getInstance();
+
+Enable / Disable APC Cache : Use APC if installed...
+
+    [php]
+    $vizzup = sfVizzup::getInstance();
+    // Enable cache
+    $vizzup->setCache(true);
+    // Disable cache
+    $vizzup->setCache(false);
+
+Account authentication API
+
+    [php]
+    $vizzup = sfVizzup::getInstance();
+    $vizzup->setAuthentication('username', 'password');
+
+Retrieve a list of a user's videos
+
+    [php]
+    $vizzup = sfVizzup::getInstance();
+    $vizzup->setAuthentication('username', 'password');
+    $vizzup->user_getVideos($vizzup->getUserId());    
+
+Retrieve a video properties
+
+    [php]
+    $vizzup = sfVizzup::getInstance();
+    $vizzup->video_getInfo('84TF2P67iE');
+
+Retrieve a embed code flash recorder 
+
+    [php]
+    $vizzup = sfVizzup::getInstance();
+    $vizzup->video_getRecorderCode(); 
+
+...
+
+## Roadmap
+
+* Implements a proxy methods on helper
